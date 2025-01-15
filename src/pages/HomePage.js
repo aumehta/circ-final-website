@@ -1,7 +1,5 @@
 import React from 'react';
-import toppic from '/Users/arohimehta/Documents/clinic/circ-website/src/pictures/header_top_photo.png';  // Adjust the path as needed
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'; // Import the arrow icon
-import { useState } from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -35,7 +33,7 @@ const HomePage = () => {
             <ArrowForwardIcon style={styles.arrowIcon} />
           </button>
         </div>
-        <img src={toppic} alt="Topic Image" style={styles.image} />
+        <img src='/pictures/header_top_photo.png' alt="Topic Image" style={styles.image} />
       </div>
 
       {/* Red box with text below the image */}

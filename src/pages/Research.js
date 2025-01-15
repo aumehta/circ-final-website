@@ -1,5 +1,4 @@
 import React from 'react';
-import toppic from '/Users/arohimehta/Documents/clinic/circ-website/src/pictures/news.png';
 
 const Research = () => {
   return (
@@ -11,7 +10,7 @@ const Research = () => {
               <hr style={styles.divider} />
               <h1 style={styles.mainText}>Cardiovascular Innovation Center</h1>
             </div>
-            <img src={toppic} alt="News Image" style={styles.image} />
+            <img src='/pictures/news.png' alt="News Image" style={styles.image} />
           </div>
           </div>
   );

@@ -1,19 +1,4 @@
 import React, { useState } from 'react';
-import toppic from '/Users/arohimehta/Documents/clinic/circ-website/src/pictures/about.jpeg'; // Adjust the path as needed
-import christopher from '/Users/arohimehta/Documents/clinic/circ-website/src/pictures/chris_lab/ChristopherNguyen.jpeg'; // Adjust the path as needed
-import salva from '/Users/arohimehta/Documents/clinic/circ-website/src/pictures/chris_lab/Yurista_Salva.jpeg'; // Adjust the path as needed
-import mehdi from '/Users/arohimehta/Documents/clinic/circ-website/src/pictures/chris_lab/Sadighi_Mehdi.png'; // Adjust the path as needed
-import matthew from '/Users/arohimehta/Documents/clinic/circ-website/src/pictures/chris_lab/Mai_Dingheng.jpeg'; // Adjust the path as needed
-import lily from '/Users/arohimehta/Documents/clinic/circ-website/src/pictures/chris_lab/Chen_Lily.jpeg'; // Adjust the path as needed
-import ashmita from '/Users/arohimehta/Documents/clinic/circ-website/src/pictures/chris_lab/AshmitaDeb.png'; // Adjust the path as needed
-import tassia from '/Users/arohimehta/Documents/clinic/circ-website/src/pictures/chris_lab/TassiaMoura.jpeg'; // Adjust the path as needed
-import mary from '/Users/arohimehta/Documents/clinic/circ-website/src/pictures/chris_lab/MaryRobakowski.jpeg'; // Adjust the path as needed
-import robert from '/Users/arohimehta/Documents/clinic/circ-website/src/pictures/chris_lab/RobertEder.png'; // Adjust the path as needed
-import david from '/Users/arohimehta/Documents/clinic/circ-website/src/pictures/david_lab/DavidChen(1).png'; // Adjust the path as needed
-import makiya from '/Users/arohimehta/Documents/clinic/circ-website/src/pictures/david_lab/Nakashima_Makiya.jpeg'; // Adjust the path as needed
-import jaehyun from '/Users/arohimehta/Documents/clinic/circ-website/src/pictures/david_lab/JuhuyenLee.jpeg'; // Adjust the path as needed
-import ishan from '/Users/arohimehta/Documents/clinic/circ-website/src/pictures/david_lab/IshanSharma.jpeg'; // Adjust the path as needed
-import lifu from '/Users/arohimehta/Documents/clinic/circ-website/src/pictures/david_lab/LifuDeng.png'; // Adjust the path as needed
 
 
 const AboutUs = () => {
@@ -21,24 +6,24 @@ const AboutUs = () => {
 
     const labMembers = {
         Chris: [
-          { name: 'Christopher Nguyen', photo: christopher },
-          { name: 'Salva Yurista', photo: salva },
-          { name: 'Mehdi Sadighi, PhD', photo: mehdi },
-          { name: 'Dingheng (Matthew) Mai, MS', photo: matthew },
-          { name: 'Shi (Lily) Chen', photo: lily },
-          { name: 'Ashmita Deb', photo: ashmita },
-          { name: 'Tassia Riberio Salles Moura', photo: tassia },
-          { name: 'Mary Robakowski', photo: mary },
-          { name: 'Robert Eder', photo: robert },
+          { name: 'Christopher Nguyen', photo: '/pictures/chris_lab/ChristopherNguyen.jpeg' },
+          { name: 'Salva Yurista', photo: '/pictures/chris_lab/Yurista_Salva.jpeg' },
+          { name: 'Mehdi Sadighi, PhD', photo: '/pictures/chris_lab/Sadighi_Mehdi.png' },
+          { name: 'Dingheng (Matthew) Mai, MS', photo: '/pictures/chris_lab/Mai_Dingheng.jpeg'},
+          { name: 'Shi (Lily) Chen', photo: '/pictures/chris_lab/Chen_Lily.jpeg' },
+          { name: 'Ashmita Deb', photo:'/pictures/chris_lab/AshmitaDeb.png' },
+          { name: 'Tassia Riberio Salles Moura', photo: '/pictures/chris_lab/TassiaMoura.jpeg' },
+          { name: 'Mary Robakowski', photo: '/pictures/chris_lab/MaryRobakowski.jpeg' },
+          { name: 'Robert Eder', photo: '/pictures/chris_lab/RobertEder.png'},
 
         ],
         David: [
-          { name: 'David Chen', photo: david },
-          { name: 'Makiya Nakashima, MS', photo: makiya },
-          { name: 'Ashmita Deb', photo: ashmita },
-          { name: 'Jaehyun Lee', photo: jaehyun},
-          { name: 'Ishan Sharma', photo: ishan },
-          { name: 'Lifu Deng', photo: lifu },
+          { name: 'David Chen', photo: '/pictures/david_lab/DavidChen(1).png' },
+          { name: 'Makiya Nakashima, MS', photo: '/pictures/david_lab/Nakashima_Makiya.jpeg'},
+          { name: 'Ashmita Deb', photo: '/pictures/chris_lab/AshmitaDeb.png' },
+          { name: 'Jaehyun Lee', photo: '/pictures/david_lab/JuhuyenLee.jpeg'},
+          { name: 'Ishan Sharma', photo: '/pictures/david_lab/IshanSharma.jpeg' },
+          { name: 'Lifu Deng', photo: '/pictures/david_lab/LifuDeng.png' },
         ],
       };
 
@@ -48,7 +33,7 @@ const AboutUs = () => {
   return (
     <div style={styles.homeContainer}>
       <div style={styles.imageContainer}>
-        <img src={toppic} alt="Topic Image" style={styles.image} />
+        <img src='/pictures/about.jpeg' alt="Topic Image" style={styles.image} />
 
         <div style={styles.textContainer}>
           <h1 style={styles.mainText}>About Us</h1>

@@ -1,5 +1,4 @@
 import React from 'react';
-import toppic from '/Users/arohimehta/Documents/clinic/circ-website/src/pictures/news.png';
 import NewsIcon from '@mui/icons-material/Article'; // Importing a news icon from MUI (you can replace it with your icon)
 
 const NewsPage = () => {
@@ -27,7 +26,7 @@ const NewsPage = () => {
           <hr style={styles.divider} />
           <h1 style={styles.mainText}>Cardiovascular Innovation Center</h1>
         </div>
-        <img src={toppic} alt="News Image" style={styles.image} />
+        <img src='pictures/news.png' alt="News Image" style={styles.image} />
       </div>
 
       {/* Featured News Section */}

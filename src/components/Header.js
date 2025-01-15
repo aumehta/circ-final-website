@@ -1,12 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '/Users/arohimehta/Documents/clinic/circ-website/src/pictures/header_logo.png'; // Correct way to import image
 
 const Header = () => {
     return (
       <header style={styles.header}>
         <Link to="/">
-        <img src={logo} alt="Logo" style={styles.logo} />
+        <img src='/pictures/header_logo.png' alt="Logo" style={styles.logo} />
         </Link>
         <nav>
           <ul style={styles.navList}>
